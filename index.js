@@ -19,6 +19,11 @@ inquirer
     },
     {
       type: 'input',
+      message: 'By:',
+      name: 'by'
+    },
+    {
+      type: 'input',
       message: 'Write a short description; what, why, how?',
       name: 'descrip',
     },
