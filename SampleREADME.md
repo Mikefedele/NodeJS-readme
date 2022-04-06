@@ -1,4 +1,27 @@
-# NodeJS README Generator
+# node
 
-# it's homework
+# By   
 
+# Description
+ readme generator created w node
+
+# Table of Contents (Optional)
+
+false
+
+
+# Installation
+
+my github
+
+# Usage
+
+use it for a readme
+
+# Installation
+
+my github
+
+# Credits
+
+me

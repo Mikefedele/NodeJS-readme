@@ -19,11 +19,6 @@ inquirer
     },
     {
       type: 'input',
-      message: 'By:',
-      name: 'by'
-    },
-    {
-      type: 'input',
       message: 'Write a short description; what, why, how?',
       name: 'descrip',
     },
@@ -52,6 +47,22 @@ inquirer
       message: 'List any credits or collaborators',
       name: 'credits',
     },
+    {
+      type: 'input',
+      message: 'Are there any Licenses?',
+      name: 'install',
+    },
+    {
+      type: 'input',
+      message: 'List any credits or collaborators',
+      name: 'credits',
+    },
+    {
+      type: 'checkbox', 
+      name: 'BadgeBox',
+      message: 'Pick your License.',
+      choices: ["Javascript", "MIT", "NodeJS"],
+    }
 
 
   ]).then(response => writeToFile("SampleREADME.md", response));
