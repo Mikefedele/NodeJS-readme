@@ -1,30 +1,28 @@
-# cksck
+# NodeJS README Generator
 
-# By   sc
+# By  
+ Mike Fedele
 
 # Description
- cs
+ This is a dynamiically created README using template literals & NPMs
 
-# Table of Contents (Optional)
-
-undefined
 
 
 # Installation
 
-
+Nothing
 
 # Usage
 
-cs
+Watch this video or visit my Github]
 
 # Link
 
-<cssc>
+[GitHub Link](https://github.com/Mikefedele/NodeJS-readme)
 
 # Credits
 
-cs
+Me
 
 # Badges
-  // Javascript  
+  // Javascript,Website-up,MIT,NodeJS  

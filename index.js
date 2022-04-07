@@ -29,13 +29,7 @@ inquirer
       message: 'Write a short description; what, why, how?',
       name: 'descrip',
     },
-    // {
-    //   type: 'rawlist',
-    //   message: 'table of Contents',
-    //   name: 'tableOfContents',
-    //   choices: ['']
-    // }
-    
+       
     {
       type: 'input',
       message: 'what is required to install your project?',
@@ -48,7 +42,12 @@ inquirer
     },
     {
       type: 'input',
-      message: 'what is the link to your project?',
+      message: 'Link text here',
+      name: 'linkText'
+    },
+    {
+      type: 'input',
+      message: 'Past your URL here',
       name: 'link',
     },
     {

@@ -36,14 +36,12 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-# By   ${data.by}
+# By  
+ ${data.by}
 
 # Description
  ${data.descrip}
 
-# Table of Contents (Optional)
-
-${data.tableOfContents}
 
 
 # Installation
@@ -56,7 +54,7 @@ ${data.usage}
 
 # Link
 
-<${data.link}>
+[${data.linkText}](${data.link})
 
 # Credits
 
