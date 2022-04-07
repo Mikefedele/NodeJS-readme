@@ -1,27 +1,30 @@
-# node
+# cksck
 
-# By   
+# By   sc
 
 # Description
- readme generator created w node
+ cs
 
 # Table of Contents (Optional)
 
-false
+undefined
 
 
 # Installation
 
-my github
+
 
 # Usage
 
-use it for a readme
+cs
 
-# Installation
+# Link
 
-my github
+<cssc>
 
 # Credits
 
-me
+cs
+
+# Badges
+  // Javascript  

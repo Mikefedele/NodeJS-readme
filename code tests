@@ -1,0 +1,54 @@
+
+
+  .forEach(element => {
+  
+});
+
+const 
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com
+
+// const badgeOptions = [
+//   ['javascript', '[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)'
+// ],
+'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'],
+// ['NodeJS', '![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)']
+// ]
+
+// for (const badge of badgeOptions ) {
+//   console.log(name);
+// }
+
+
+// switch(badges){
+// case add:
+//   sum (a.b)
+//   break;
+//  case subtract: 
+//   difference (a,b)
+//   break;
+//   case multipy:
+//   product (a,b)
+//   break;
+//   case divide:
+//   quotient
+// }
+
+//todo filter might be better
+
+   switch (badgeBox){
+    case "Javascript":
+      return badgeOptions[0];
+  
+    case "Website-up":
+      return badgeOptions[1];  
+    case "MIT":
+      return badgeOptions[2];
+     case "NodeJS":
+       return badgeOptions[3];
+      case "":
+        return "";
+
+   }
+ }
+
+renderLicenseBadge();

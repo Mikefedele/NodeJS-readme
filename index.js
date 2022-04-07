@@ -4,10 +4,12 @@ const path = require ('path')
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { log } = require('console');
+const { type } = require('os');
 
 // TODO: Create an array of questions for user input
-// const questions = [  ``
-// ];
+
+//todo how do i get an if statement after confirm for a follow up question?
+
 
 
 inquirer
@@ -19,19 +21,26 @@ inquirer
     },
     {
       type: 'input',
+      message: 'What is your name?',
+      name: 'by',
+    },
+    {
+      type: 'input',
       message: 'Write a short description; what, why, how?',
       name: 'descrip',
     },
-    {
-      type: 'confirm',
-      message: 'table of Contents',
-      name: 'tableOfContents',
-    },
+    // {
+    //   type: 'rawlist',
+    //   message: 'table of Contents',
+    //   name: 'tableOfContents',
+    //   choices: ['']
+    // }
+    
     {
       type: 'input',
       message: 'what is required to install your project?',
       name: 'install',
-    },
+    },  
     {
       type: 'input',
       message: 'Provide instructions & examples for use.',
@@ -39,8 +48,8 @@ inquirer
     },
     {
       type: 'input',
-      message: 'what is required to install your project?',
-      name: 'install',
+      message: 'what is the link to your project?',
+      name: 'link',
     },
     {
       type: 'input',
@@ -59,26 +68,37 @@ inquirer
     },
     {
       type: 'checkbox', 
-      name: 'BadgeBox',
+      name: 'badgeBox',
       message: 'Pick your License.',
-      choices: ["Javascript", "MIT", "NodeJS"],
+      choices: ["Javascript", "Website-up" ,"MIT", "NodeJS"],
     }
 
 
   ]).then(response => writeToFile("SampleREADME.md", response));
 
+//todo
+  // i know this works to give me the value but i can't transer the data
+// .then(response => console.log(response.badgeBox[0]));
 
- 
+  
 
+  
+
+  
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
  return fs.writeFileSync(path.join(__dirname, fileName), generateMarkdown({...data}))
 }
-
-
-
+// JSON.stringify(response.baadgeBox)
 // // TODO: Create a function to initialize app
-// function init() {}
+// function init() { 
 
-// // Function call to initialize app
+//   // Prompt user to answer user input questions
+//   inquirer.prompt(questions)
+//   .then((response) => {
+//      console.log('Create your readme')
+//      console.log(response) }
+//   )}
+
+// // // Function call to initialize app
 // init();
